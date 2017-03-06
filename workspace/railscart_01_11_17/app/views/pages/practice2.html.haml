@@ -1,0 +1,20 @@
+-content_for :title, "Rails - HAML Practice"
+.h1 Practica Haml
+.p Find me in app/views/pages/practice2.html.erb
+
+%a{:href =>'#'}
+  %img{:src => '#'}
+  
+%br/
+
+-Product.all.each do |prod|
+  =prod.title
+  =prod.description
+  %br/
+
+%center
+  %div{:style => 'width:1000px'}
+    .top Arriba
+    .left Izquierda
+    .right Derecha
+    .bottom Abajo
